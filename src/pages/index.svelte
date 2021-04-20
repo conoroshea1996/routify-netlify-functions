@@ -14,7 +14,13 @@
 <!-- routify:options index=10 -->
 <!-- routify:options title="home" -->
 
-<form name="contact" method="POST" data-netlify="true">
+<form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="honeypot"
+>
+  <input type="hidden" name="honeypot" tabIndex={-1} autoComplete="off" />
   <label>Your Name: <input type="text" name="name" /></label>
   <label>Your Email: <input type="email" name="email" /></label>
   <input type="hidden" name="form-name" value="contact" />
