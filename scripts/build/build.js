@@ -13,4 +13,7 @@ const bundle = {
   script: fs.readFileSync("public/build/bundle.js", "utf8"),
   template: fs.readFileSync("public/__app.html", "utf8"),
 };
-fs.writeFileSync("api/ssr/bundle.json", JSON.stringify(bundle, null, 2));
+fs.writeFileSync(
+  "netlify/functions/ssr/bundle.json",
+  JSON.stringify(bundle, null, 2)
+);
