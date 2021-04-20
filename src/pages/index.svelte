@@ -18,7 +18,7 @@
   <p>
     <label>Your Email: <input type="email" name="email" /></label>
   </p>
-
+  <input type="hidden" name="form-name" value="contact" />
   <button type="submit">Send</button>
 </form>
 
